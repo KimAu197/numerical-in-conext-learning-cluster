@@ -1,0 +1,31 @@
+inherit:
+    - base.yaml
+
+model:
+    n_dims: 2
+    n_positions: 500
+    n_cluster: 2
+
+training:
+    task: cluster_2d # TODO
+    data: cluster_2d # TODO
+    n_cluster: 2
+    curriculum: 
+        points: #点的个数
+            start: 100 # TODO
+            end: 200 # TODO
+            inc: 10 # TODO
+            interval: 2000 # TODO
+        dims: # 点的纬度
+            start: 2
+            end: 2
+            inc: 0
+            interval: 2000
+    learning_rate: 0.0001 
+    resume_id: df32fbda-5096-4279-8d9b-ca91ac3158f1 # TODO
+
+
+out_dir: ../numerical-in-context-learning/result/model/cluster_2d_sim  # TODO
+
+wandb:
+    name: "cluster_2dtest_sim" # TODO

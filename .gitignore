@@ -1,0 +1,8 @@
+.ipynb_checkpoints
+__pycache__
+models.zip
+models
+.idea
+src/wandb/
+*.log
+*.log

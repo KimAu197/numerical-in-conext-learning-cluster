@@ -1,0 +1,50 @@
+{
+    "200": {
+        "model_metrics": {
+            "ARI": 0.7871187673886055,
+            "Silhouette": 0.14703834056854248,
+            "Calinski-Harabasz": 0.7854576983321003,
+            "Davies-Bouldin": 72.8873448005626,
+            "Homogeneity": 0.7038502532012516,
+            "Completeness": 0.7046727444903176,
+            "V-Measure": 0.7042594802709232
+        },
+        "kmeans_metrics": {
+            "ARI": -0.00211352572926208,
+            "Silhouette": 0.3147388994693756,
+            "Calinski-Harabasz": 101.97837989034522,
+            "Davies-Bouldin": 1.243803257582023,
+            "Homogeneity": 0.002134100764088789,
+            "Completeness": 0.0021637182548669438,
+            "V-Measure": 0.002148689216275769
+        },
+        "gmm_metrics": {
+            "ARI": 0.004460814301685039,
+            "Silhouette": 0.3143601417541504,
+            "Calinski-Harabasz": 98.10373890334553,
+            "Davies-Bouldin": 1.2419059039101774,
+            "Homogeneity": 0.00969024844866147,
+            "Completeness": 0.01373496445609665,
+            "V-Measure": 0.011052136181824978
+        },
+        "agglomerative_metrics": {
+            "ARI": 0.051482845949320996,
+            "Silhouette": 0.3227626383304596,
+            "Calinski-Harabasz": 85.86480177501306,
+            "Davies-Bouldin": 1.21430768211727,
+            "Homogeneity": 0.07676820193921263,
+            "Completeness": 0.10615503858114382,
+            "V-Measure": 0.08887013454851156
+        },
+        "dbscan_metrics": {
+            "ARI": 0.09375,
+            "Silhouette": 0.018904706928879023,
+            "Calinski-Harabasz": 0.0001866312295144163,
+            "Davies-Bouldin": 29.7660454942671,
+            "Homogeneity": 0.09375000000000025,
+            "Completeness": 0.09375000000000025,
+            "V-Measure": 0.09375000000000025
+        },
+        "accuracy": 0.94234375
+    }
+}

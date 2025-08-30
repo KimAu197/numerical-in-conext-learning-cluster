@@ -1,0 +1,5 @@
+wandb:
+    project: in-context-cluster-training
+    entity: baojian-fudan-university
+    notes: cluster2d_test1
+    log_every_steps: 100

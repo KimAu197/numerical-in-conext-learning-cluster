@@ -1,0 +1,31 @@
+inherit:
+    - base.yaml
+
+model:
+    n_dims: 2
+    n_positions: 1001
+    n_cluster: 2
+
+training:
+    task: cluster_2d_eval # TODO
+    data: cluster_2d_eval # TODO
+    n_cluster: 2
+    curriculum: 
+        points: #点的个数
+            start: 400 # TODO
+            end: 500 # TODO
+            inc: 10 # TODO
+            interval: 2000 # TODO
+        dims: # 点的纬度
+            start: 2
+            end: 2
+            inc: 0
+            interval: 2000
+    learning_rate: 0.0001 
+    # resume_id: 24c1872a-7ff7-427f-9d41-ff57d6b7ee1f # TODO
+
+
+out_dir: ../numerical-in-context-learning/result/model/cluster_2d_eval  # TODO
+
+wandb:
+    name: "cluster_eval" # TODO

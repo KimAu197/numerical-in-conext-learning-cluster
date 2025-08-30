@@ -1,0 +1,33 @@
+inherit:
+    - base.yaml
+
+model:
+    n_dims: 3
+    n_positions: 1001
+    n_cluster: 2
+
+training:
+    task: cluster_nd # TODO
+    data: cluster_nd # TODO
+    n_cluster: 2
+    save_sample: True
+    curriculum: 
+        points: #点的个数
+            start: 200 # TODO
+            end: 200 # TODO
+            inc: 0 # TODO
+            interval: 2000 # TODO
+        dims: # 点的纬度
+            start: 3
+            end: 3
+            inc: 0
+            interval: 2000
+    learning_rate: 0.0001 
+    resume_id: a6b1c111-2218-4873-977c-ddd4c2b495c5
+
+
+out_dir: ../numerical-in-context-learning/result/model/cluster_3d2  # TODO
+
+wandb:
+    name: "cluster_3dtest"
+    notes: cluster_3dtest
