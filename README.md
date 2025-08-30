@@ -1,9 +1,31 @@
-# A Reasearch of the numerical capabilities of transformers
+# Numerical In-Context Learning for Clustering with Linear Transformers
 
-eval 的 代码在 src/eval_cluster.py 中
+This repository contains code developed for my undergraduate thesis on **in-context learning with linear Transformers** applied to **numerical clustering tasks**.  
+The experiments investigate whether linear Transformers generalize clustering rules, or instead behave as **memory-driven template matchers**.
 
-train 的代码在 src/train.py 中
+## 📂 Repository Structure
 
-sample 产生 data 的代码在 src/graph.py 中
+- **environment.yml** – dependencies and environment setup  
+- **data.json**, **all_results_o2.json** – example datasets / experiment outputs  
+- **non-linear-regression-IVP.ipynb**, **cluster.ipynb** – Jupyter notebooks for exploration and visualization  
+
+### `src/`
+- **train.py** – training entry point  
+- **eval_cluster.py** – evaluation of clustering tasks  
+- **graph.py** – synthetic data generation / sampling  
+- **models.py**, **base_models.py** – model definitions (linear Transformer, etc.)  
+- **curriculum.py**, **samplers.py**, **tasks.py** – task and data curriculum utilities  
+- **plot_utils.py** – helper functions for plotting results  
+- **conf/** – YAML configs for models and tasks  
+
+---
+
+## ⚙️ Setup
+
+Create the conda environment from `environment.yml`:
+
+```bash
+conda env create -f environment.yml
+conda activate num-cluster
 
 
