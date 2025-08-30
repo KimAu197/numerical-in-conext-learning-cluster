@@ -27,5 +27,29 @@ Create the conda environment from `environment.yml`:
 ```bash
 conda env create -f environment.yml
 conda activate num-cluster
+```
 
+## 🚀 Usage
+
+1. Training
+
+Run training on clustering tasks:
+
+```bash
+python src/train.py --config src/conf/cluster_2d.yaml # change xd for different dimention
+```
+
+2. Evaluation
+
+Evaluate a trained model:
+
+```bash
+python src/eval_cluster.py --config src/conf/cluster_2d_eval.yaml
+
+
+
+## 📊 Results
+	•	Models perform well at template matching (memorizing cluster examples seen in context).
+	•	Generalization to new clustering rules or shapes is limited.
+	•	Behavior suggests linear Transformers act more like memory-based pattern matchers rather than learners of universal clustering functions.
 
