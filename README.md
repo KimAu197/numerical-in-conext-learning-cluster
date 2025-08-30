@@ -45,7 +45,7 @@ Evaluate a trained model:
 
 ```bash
 python src/eval_cluster.py --config src/conf/cluster_2d_eval.yaml
-
+```
 
 
 ## 📊 Results
