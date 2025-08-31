@@ -44,21 +44,21 @@ python src/eval_cluster.py --config src/conf/cluster_2d_eval.yaml
 	•	Generalization to new clustering rules or shapes is limited.
 	•	Behavior suggests linear Transformers act more like memory-based pattern matchers rather than learners of universal clustering functions.
 
-	•	The 2 figures show the decision boundary diagrams of models trained at 0 steps, 30,000 steps, 250,000 steps, and 500,000 steps on four types of distributed data:
+The 2 figures show the decision boundary diagrams of models trained at 0 steps, 30,000 steps, 250,000 steps, and 500,000 steps on four types of distributed data:
 
 ![Decision boundary diagrams of models trained at 0 steps, 30,000 steps, 250,000 steps, and 500,000 steps on four types of distributed data.](fig/1.png)
 
 ![Decision boundary diagrams of models trained at 0 steps, 30,000 steps, 250,000 steps, and 500,000 steps on four types of distributed data.](fig/2.png)
 
 
-	•	Visualization of decision areas under perturbation of prompt order:
+Visualization of decision areas under perturbation of prompt order:
 
 ![Visualization of decision areas under perturbation of prompt order](fig/3.png)
 
-	•	A comparison chart of accuracy between true labels and random labels:
+A comparison chart of accuracy between true labels and random labels:
 
 ![A comparison chart of accuracy between true labels and random labels](fig/5.png)
 
-	•	AComparison of indicators between contextual learning models and classical models: 
+A Comparison of indicators between contextual learning models and classical models: 
 ![Comparison of indicators between contextual learning models and classical models](fig/4.png)
 
